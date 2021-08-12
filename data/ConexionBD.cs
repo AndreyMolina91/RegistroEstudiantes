@@ -13,6 +13,10 @@ namespace data
         //Metodo que conecta a la base de datos MySql, SqlServer y Postgres segun la cadena de conexion creada en appconfig del proyecto principal RegistroEstudiantes
         public ConexionBD() : base("ANDREYBDMYSQL") { }
 
+        /// <summary>
+        /// Prueba de Git status
+        /// </summary>
+
         //creamos un objeto publico de tipo Table de la libreria Linq2db 
 
         //La Interface nos conecta a la tablaestudiantes de la base de datos utilizando la conexion de base("ANDREYBDMYSQL")
