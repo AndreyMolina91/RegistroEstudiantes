@@ -56,3 +56,6 @@ C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\S
 C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\System.Text.Json.xml
 C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\System.Threading.Channels.xml
 C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\System.ValueTuple.xml
+C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\FluentAssertions.dll
+C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\FluentAssertions.pdb
+C:\Users\Lenovo\source\repos\RegistroEstudiantes\RegistroEstudiantes\bin\Debug\FluentAssertions.xml

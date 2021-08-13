@@ -113,6 +113,7 @@
     <Compile Include="Estudiantes.cs" />
     <Compile Include="LibreriaCreadaAndrey\ClaseCargarImagen.cs" />
     <Compile Include="LibreriaCreadaAndrey\EventosTextBox.cs" />
+    <Compile Include="LibreriaCreadaAndrey\ITablaEstudiantes.cs" />
     <Compile Include="LibreriaCreadaAndrey\LibreriaClases.cs" />
     <Compile Include="LibreriaCreadaAndrey\Paginador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

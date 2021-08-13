@@ -5,17 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Npgsql; //Using de referencia para usar las clases de conexion con postgres
 
 namespace data
 {
     public class ConexionBD : DataConnection //Clase de la libreria Linq2db
     {
+         
         //Metodo que conecta a la base de datos MySql, SqlServer y Postgres segun la cadena de conexion creada en appconfig del proyecto principal RegistroEstudiantes
-        public ConexionBD() : base("ANDREYBDMYSQL") { }
-
-        /// <summary>
-        /// Prueba de Git status
-        /// </summary>
+        public ConexionBD() : base("ANDREYBDSQLSERVER") { }
 
         //creamos un objeto publico de tipo Table de la libreria Linq2db 
 
@@ -29,4 +27,5 @@ namespace data
         //Ya que tenemos la conexion realizada vamos al proyecto logicadelnegocio para pasarle la informacion del servidor que la
         //obtenemos por medio del proyecto Data....
     }
+    
 }

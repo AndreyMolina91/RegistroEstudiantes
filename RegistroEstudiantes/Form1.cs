@@ -1,14 +1,18 @@
-﻿using logicadelnegocio; //using para poder hacer referencia o crear objetos de la subclase Estudiante dentro de la clase logicadenegocio
+﻿using data;
+using logicadelnegocio; //using para poder hacer referencia o crear objetos de la subclase Estudiante dentro de la clase logicadenegocio
 using logicadelnegocio.LibreriaCreadaAndrey; //using para poder crear objetos de la libreriadeclases
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using LinqToDB;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LinqToDB.Common;
+using FluentAssertions.Common;
 
 namespace RegistroEstudiantes
 {
@@ -21,8 +25,11 @@ namespace RegistroEstudiantes
         //private LibreriaClases ObjLibreriaClases;
         public Form1()
         {
+                       
+
             //METODO CONSTRUCTOR FORM1
-            InitializeComponent();
+            InitializeComponent();           
+
             GridViewEstudiantes.Hide();
             TextBoxBuscar.Hide();
             label2.Hide();
