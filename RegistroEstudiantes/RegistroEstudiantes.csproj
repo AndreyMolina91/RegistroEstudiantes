@@ -123,19 +123,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrLogin.Designer.cs">
+      <DependentUpon>FrLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrMenu.Designer.cs">
+      <DependentUpon>FrMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.es.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrLogin.resx">
+      <DependentUpon>FrLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrMenu.es.resx">
+      <DependentUpon>FrMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrMenu.resx">
+      <DependentUpon>FrMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +182,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Imagen2.png" />
+    <None Include="Resources\Imagen1.jpg" />
     <None Include="Resources\siguiente.png" />
     <None Include="Resources\ultimo.png" />
     <None Include="Resources\primero.png" />

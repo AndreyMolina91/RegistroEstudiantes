@@ -12,24 +12,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LinqToDB.Common;
-using FluentAssertions.Common;
+
 
 namespace RegistroEstudiantes
 {
-    public partial class Form1 : Form
+    public partial class FrMenu : Form
     {
+
+
+
+
         //Despues de haber creado la referencia dentro de RegistroEstudiantes de = Logicadelnegocio
         //creamos un objeto de la clase RegistroEstudiantes
 
         private Estudiantes estudiante; //Hacemos uso de todos los metodos y datos en la clase  Estudiante incluyendo las herencias de Libreria de clases
         //private LibreriaClases ObjLibreriaClases;
-        public Form1()
+        public FrMenu()
         {
-                       
 
+            
             //METODO CONSTRUCTOR FORM1
-            InitializeComponent();           
-
+            InitializeComponent();
+            
             GridViewEstudiantes.Hide();
             TextBoxBuscar.Hide();
             label2.Hide();
@@ -61,6 +65,19 @@ namespace RegistroEstudiantes
             //el objeto estudiante que inicializamos arriba como privado, le vamos a pasar los parametro que requiera para construir
             estudiante = new Estudiantes(listaTextBox, listaLabel, contenedorObjetos); //ahora debemos crear un metodo constructor a la clase estudiante que reciba ese parametro
 
+        }
+
+        //Clase para enviar el form por parametros
+
+        public ConfiguracionPostgreSQL ConfiguracionPostgreSQL; //Creamos un objeto de la clase ConfiguracionPostgreSQL
+        public void FrMenuEnvio(ConfiguracionPostgreSQL configuracionPostgreSQL) //Pasamos por parametro la clase
+        {
+            ConfiguracionPostgreSQL = configuracionPostgreSQL; //Le asignamos al objeto la clase por parametro
+        }
+
+        public void FrMenu_Load()
+        {
+            ConfiguracionPostgreSQL.Propiedad = true; //Obtenemos el get propiedad de la clase 
         }
 
         private void pictureBoxFotoEstudiante_Click(object sender, EventArgs e)

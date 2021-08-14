@@ -329,40 +329,40 @@ namespace logicadelnegocio
 
         //Creamos metodos que van a implementar la interfaz de consultas a postgres
 
-        public class PostgressConsultas : ITablaEstudiantes
-        {
-            private ConfiguracionPostgreSQL _connectionString;
+        //public class PostgressConsultas : ITablaEstudiantes
+        //{
+        //    private ConfiguracionPostgreSQL _connectionString;
 
-            public PostgressConsultas(ConfiguracionPostgreSQL connectionString)
-            {
-                _connectionString = connectionString;
-            }
+        //    public PostgressConsultas(ConfiguracionPostgreSQL connectionString)
+        //    {
+        //        _connectionString = connectionString;
+        //    }
 
-            public Task<bool> DeleteEstudiante(TablaEstudiantes estudiante)
-            {
-                throw new NotImplementedException();
-            }
+        //    public Task<bool> DeleteEstudiante(TablaEstudiantes estudiante)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
 
-            public Task<TablaEstudiantes> Getid(int id)
-            {
-                throw new NotImplementedException();
-            }
+        //    public Task<TablaEstudiantes> Getid(int id)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
 
-            public Task<IEnumerable<TablaEstudiantes>> GetTablaEstudiantes()
-            {
-                throw new NotImplementedException();
-            }
+        //    public Task<IEnumerable<TablaEstudiantes>> GetTablaEstudiantes()
+        //    {
+        //        throw new NotImplementedException();
+        //    }
 
-            public Task<bool> InsertarEstudiante(TablaEstudiantes estudiante)
-            {
-                throw new NotImplementedException();
-            }
+        //    public Task<bool> InsertarEstudiante(TablaEstudiantes estudiante)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
 
-            public Task<bool> UpdateEstudiante(TablaEstudiantes estudiante)
-            {
-                throw new NotImplementedException();
-            }
-        }
+        //    public Task<bool> UpdateEstudiante(TablaEstudiantes estudiante)
+        //    {
+        //        throw new NotImplementedException();
+        //    }
+        //}
 
 
     }

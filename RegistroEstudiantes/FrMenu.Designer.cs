@@ -1,7 +1,7 @@
 ﻿
 namespace RegistroEstudiantes
 {
-    partial class Form1
+    partial class FrMenu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
