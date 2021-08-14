@@ -1,4 +1,5 @@
 ﻿using data;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,36 +12,43 @@ using System.Windows.Forms;
 
 namespace RegistroEstudiantes
 {
-    public partial class FrLogin : FrMenu
+    public partial class FrLogin : Form
     {
         public FrLogin()
         {
             InitializeComponent();
-            var listaTextBox2 = new List<TextBox>(); //Lista de textbox que enviaremos por parametros a la clase ConfiguracionPostgreSQL
-            listaTextBox2.Add(TxtBxUsuario);
-            listaTextBox2.Add(TxtBxClave);
-            
+              
 
         }
 
-       
-
-        private void Btnlogin_Click(object sender, EventArgs e)
+        private void Login()
         {
-            ConfiguracionPostgreSQL.Login();
 
-            if (ConfiguracionPostgreSQL.Login()) //Está almacenando informacoón como null, y necesitamos que sea True o False para ejecutar el query a la BD
+            Form frm = new FrMenu();
+            NpgsqlConnection conn = new NpgsqlConnection("Server= localhost; Port=5432; User Id=postgres; Password = Admin; Database = estudiantesBD");
+            NpgsqlCommand comm = new NpgsqlCommand("select usuario,clave from usuario where usuario='" + TxtBxUsuario.Text + "'and clave='" + TxtBxClave.Text + "'", conn);
+
+            conn.Open();
+            NpgsqlDataReader dataReader = comm.ExecuteReader();
+
+            if (dataReader.Read())
             {
-                Form frmDesactive = new FrLogin();
-                frmDesactive.Close();                
-                Form frmActive = new FrMenu();
-                frmActive.Show();
+                MessageBox.Show("Acceso autorizado al sistema");
+                frm.Show();
+
             }
             else
             {
-                MessageBox.Show("Algo salio mal en la conexion a la BD");
+                MessageBox.Show("Datos incorrectos");
+
             }
-                 
+
         }
-    }
+
+        private void Btnlogin_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
+    }   
+    
 }
