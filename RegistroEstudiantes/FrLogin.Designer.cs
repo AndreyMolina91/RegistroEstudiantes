@@ -48,19 +48,29 @@ namespace RegistroEstudiantes
             // 
             // TxtBxUsuario
             // 
-            this.TxtBxUsuario.Location = new System.Drawing.Point(86, 120);
-            this.TxtBxUsuario.Multiline = true;
+            this.TxtBxUsuario.BackColor = System.Drawing.Color.LightGray;
+            this.TxtBxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBxUsuario.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBxUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TxtBxUsuario.Location = new System.Drawing.Point(86, 126);
+            this.TxtBxUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.TxtBxUsuario.MaxLength = 20;
             this.TxtBxUsuario.Name = "TxtBxUsuario";
-            this.TxtBxUsuario.Size = new System.Drawing.Size(141, 25);
+            this.TxtBxUsuario.Size = new System.Drawing.Size(141, 15);
             this.TxtBxUsuario.TabIndex = 1;
             // 
             // TxtBxClave
             // 
-            this.TxtBxClave.Location = new System.Drawing.Point(86, 153);
-            this.TxtBxClave.Multiline = true;
+            this.TxtBxClave.BackColor = System.Drawing.Color.LightGray;
+            this.TxtBxClave.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBxClave.Location = new System.Drawing.Point(86, 160);
+            this.TxtBxClave.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.TxtBxClave.MaxLength = 20;
             this.TxtBxClave.Name = "TxtBxClave";
-            this.TxtBxClave.Size = new System.Drawing.Size(141, 25);
+            this.TxtBxClave.PasswordChar = '°';
+            this.TxtBxClave.Size = new System.Drawing.Size(141, 13);
             this.TxtBxClave.TabIndex = 2;
+            this.TxtBxClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBxClave_KeyPress);
             // 
             // Btnlogin
             // 

@@ -263,5 +263,10 @@ namespace RegistroEstudiantes
             buttonAntPagina.Show();
             buttonUltPagina.Show();
         }
+
+        private void btnSalirSistema_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
